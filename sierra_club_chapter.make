@@ -139,7 +139,7 @@ projects[job_scheduler][subdir] = "developer"
 
 ; Libraries ===================================================================
 libraries[ckeditor][download][type] = get
-libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.3/ckeditor_3.6.3.tar.gz
+libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.4/ckeditor_4.3.4_standard.tar.gz
 
 ;libraries[colorbox][download][type] = git
 ;libraries[colorbox][download][url] = http://github.com/jackmoore/colorbox.git
