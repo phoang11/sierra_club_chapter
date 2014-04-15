@@ -43,3 +43,4 @@ dependencies[] = wysiwyg
 dependencies[] = imce_wysiwyg
 dependencies[] = nodequeue
 dependencies[] = nodeblock
+dependencies[] = libraries

@@ -73,51 +73,6 @@ function sierra_club_chapter_install() {
   $full_html_format = (object) $full_html_format;
   filter_format_save($full_html_format);
 
-  // Insert default pre-defined node types into the database. For a complete
-  // list of available node type attributes, refer to the node type API
-  // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
-  $types = array(
-    array(
-      'type' => 'section_front',
-      'name' => st('Section Front'),
-      'base' => 'node_content',
-      'description' => st("Create a landing page for a site section."),
-      'custom' => 1,
-      'modified' => 1,
-      'locked' => 0,
-    ),
-  );
-
-  foreach ($types as $type) {
-    $type = node_type_set_defaults($type);
-    node_type_save($type);
-    node_add_body_field($type);
-  }
-
-  // Insert default pre-defined RDF mapping into the database.
-  $rdf_mappings = array(
-    array(
-      'type' => 'node',
-      'bundle' => 'section_front',
-      'mapping' => array(
-        'rdftype' => array('foaf:Document'),
-      ),
-    ),
-  );
-  foreach ($rdf_mappings as $rdf_mapping) {
-    rdf_mapping_save($rdf_mapping);
-  }
-
-  // Default "Section front page" to not be promoted and have comments disabled.
-  variable_set('node_options_section_front', array('status'));
-  variable_set('comment_section_front', COMMENT_NODE_HIDDEN);
-
-  // Don't display date and author information for "Section front page" nodes by default.
-  variable_set('node_submitted_section_front', FALSE);
-
-  //Disable node preview option.
-  variable_set('node_preview_section_front', FALSE);
-  
   // Enable default permissions for system roles.
   $filtered_html_permission = filter_permission_name($filtered_html_format);
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
@@ -149,13 +104,6 @@ function sierra_club_chapter_install() {
 
   //Disable theme
   theme_disable(array('bartik','seven'));
-
-/*
-  //Enable modules
-  module_enable(array(
-  
-  ));
-*/
 
 
   //Enable theme
