@@ -1,4 +1,1 @@
-sierra_club_chapter
-===================
-
-Sierra Club Chapter Distro
+Sierra Club Chapter Distribution

@@ -1,0 +1,45 @@
+name = Sierra Club Chapter
+description = Install with a Drupal Sierra Club Chapter pre-configure for use.
+core = 7.x
+distribution_name = Sierra Club Chapter
+exclusive = 1
+
+; Core
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = context
+dependencies[] = context_ui
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = features
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = imce
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = xmlsitemap
+dependencies[] = wysiwyg
+dependencies[] = imce_wysiwyg
+dependencies[] = nodequeue
+dependencies[] = nodeblock
