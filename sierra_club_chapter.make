@@ -117,7 +117,7 @@ projects[xmlsitemap][subdir] = contrib
 projects[xmlsitemap][version] = 2.0
 
 projects[wysiwyg][subdir] = contrib
-projects[wysiwyg][version] = 7.x-2.x-dev
+projects[wysiwyg][version] = 2.x-dev
 
 ; Developer Modules ===========================================================
 
